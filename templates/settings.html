@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Telegram Bot Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="my-4">
+            <h1>Telegram Bot Dashboard</h1>
+            <nav>
+                <a href="/">Home</a> | 
+                <a href="/analytics">Analytics</a> | 
+                <a href="/settings">Settings</a> | 
+                <a href="/help">Help</a>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Settings</h2>
+            <p>Configure your bot settings below:</p>
+            <form>
+                <div class="form-group">
+                    <label for="botToken">Bot Token</label>
+                    <input type="text" class="form-control" id="botToken" placeholder="Enter your bot token">
+                </div>
+                <div class="form-group">
+                    <label for="featureToggle">Enable Keyword Analysis</label>
+                    <input type="checkbox" id="featureToggle">
+                </div>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </form>
+        </section>
+
+        <footer class="mt-4">
+            <div class="container text-center">
+                <p>&copy; 2023 Your Company. All rights reserved.</p>
+                <p>
+                    <a href="/privacy-policy">Privacy Policy</a> | 
+                    <a href="/terms-of-service">Terms of Service</a> | 
+                    <a href="mailto:support@yourcompany.com">Contact Us</a>
+                </p>
+                <div>
+                    <a href="https://twitter.com/yourcompany" target="_blank">Twitter</a> | 
+                    <a href="https://facebook.com/yourcompany" target="_blank">Facebook</a> | 
+                    <a href="https://linkedin.com/company/yourcompany" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
